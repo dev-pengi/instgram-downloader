@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Palanquin:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,700;1,900&family=Tajawal:wght@200;300;400;500&display=swap');
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.no-drag {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+a {
+    color: currentColor;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+:root {
+    --background1: #ff6a96;
+    --background2: #070606;
+    --nav1: #ffffff;
+}
+
+body {
+    font-family: "Montserrat", "Tajawal", sans-serif;
+    color: #fff;
+    font-weight: 500;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #ff0033;
+    background: linear-gradient(8deg, #2563eb 0%, #db2777 50%) no-repeat;
+    --tw-gradient-stops: var(--tw-gradient-from), #db2777, var(--tw-gradient-to, rgba(219, 39, 119, 0));
+    min-height: 100vh;
+}
+
+
+.max-width {
+    display: block;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+nav {
+    height: 60px;
+    overflow: hidden;
+    background-color: var(--nav1);
+}
+
+nav .max-width {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+}
+
+nav h1 {
+    font-family: "Tajawal", sans-serif;
+    font-size: 41px;
+    font-weight: 700;
+    color: #db2777;
+}
+
+.title {
+    font-family: "Tajawal", sans-serif;
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 38px;
+}
+
+.des {
+    width: 100%;
+    text-align: center;
+}
+
+.search_field {
+    max-width: 800px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.err-block {
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.search input {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    width: 100%;
+    border: #00000000 solid 1px;
+}
+
+.err {
+    border: rgb(255, 0, 0) 1px solid !important;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .3s;
+    color: #db2777;
+}
+
+button i {
+    margin-right: 5px;
+}
+/* *{ */
+    /* border: red 1px solid; */
+/* } */
+.result {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #fff;
+    width: max-content;
+    height: max-content;
+    padding: 0 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+.result img {
+    margin-top: 30px;
+     width: 500px; 
+    border-radius: 10px;
+}
+.result .info span {
+    color: #111;
+}
+
+.result .download_btn {
+    cursor: pointer;
+    padding: 12px 18px;
+    width: max-content;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+    background-color: #db2777;
+    margin: 15px 0;
+    width: 100%;
+}
+.result .download_btn span{
+    margin-left: 5px;
+}
+
+
+
+
+
+@media screen and (max-width:1320px) {
+    .max-width {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .search_field {
+        padding: 0 13px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .search {
+        flex-wrap: wrap;
+    }
+
+    button {
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .title {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .title {
+        font-size: 30px;
+    }
+}
